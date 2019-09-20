@@ -4,6 +4,9 @@ set termguicolors
 
 set encoding=utf-8
 
+" This allows buffers to be hidden if you've modified a buffer.
+set hidden
+
 "Copy indent from current line when starting a new line
 set autoindent
 "Number of spaces that a <Tab> in the file counts for.
@@ -18,7 +21,7 @@ set showcmd
 set list
 "Enable the use of the mouse
 if has('mouse')
-  set mouse=a
+"  set mouse=a
 endif
 
 "Prevents backup before overwriting a file 
@@ -33,7 +36,6 @@ set noswapfile
 
 "Disable history and bookmarks in .netrwhist
 let g:netrw_dirhistmax = 0
-
 
 "Netrw Configuration
 let g:netrw_banner = 0
@@ -53,3 +55,8 @@ aug netrwClose
   au!
   au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw"|q|endif
 aug END
+
+"Summary:
+"    A buffer is the in-memory text of a file.
+"    A window is a viewport on a buffer.
+"    A tab page is a collection of windows.
