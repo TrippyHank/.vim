@@ -18,7 +18,7 @@ set showcmd
 set list
 "Enable the use of the mouse
 if has('mouse')
-  set mouse=v
+  set mouse=a
 endif
 
 "Prevents backup before overwriting a file 
@@ -44,6 +44,12 @@ let g:netrw_winsize = 20
 
 "Create a ProjectDrawer
 aug ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Vexplore
+  au!
+  au VimEnter * :Vexplore
 aug end
+
+"Close vim if netrw is last and only buffer
+aug netrwClose
+  au!
+  au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw"|q|endif
+aug END
