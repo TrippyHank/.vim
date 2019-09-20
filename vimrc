@@ -31,6 +31,10 @@ set noswapfile
 "vmap <C-v> p
 "vmap <C-c> y
 
+"Disable history and bookmarks in .netrwhist
+let g:netrw_dirhistmax = 0
+
+
 "Netrw Configuration
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
