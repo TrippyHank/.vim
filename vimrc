@@ -2,6 +2,9 @@ syntax enable
 colorscheme monokai-phoenix
 set termguicolors
 
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+
 set encoding=utf-8
 
 "Copy indent from current line when starting a new line
@@ -14,8 +17,6 @@ set ruler
 set number
 "Show (partial) command in the last line of the screen.
 set showcmd
-"Enable lists
-set list
 "Enable the use of the mouse
 if has('mouse')
   set mouse=a
@@ -26,14 +27,8 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-"Cut, Paste, Copy
-"vmap <C-x> d
-"vmap <C-v> p
-"vmap <C-c> y
-
 "Disable history and bookmarks in .netrwhist
 let g:netrw_dirhistmax = 0
-
 
 "Netrw Configuration
 let g:netrw_banner = 0

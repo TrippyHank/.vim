@@ -1,4 +1,3 @@
-set number
 set background=dark
 hi clear
 
