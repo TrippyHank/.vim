@@ -51,8 +51,3 @@ aug netrwClose
   au!
   au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw"|q|endif
 aug END
-
-"Summary:
-"    A buffer is the in-memory text of a file.
-"    A window is a viewport on a buffer.
-"    A tab page is a collection of windows.
