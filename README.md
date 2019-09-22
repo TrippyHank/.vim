@@ -1,6 +1,6 @@
 # Vim Configuration
 
-Here's the `.vim` folder i use 👨‍💻
+Here's the `.vim` folder i use. 🐢
 
 ## Getting Started
 
