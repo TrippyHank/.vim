@@ -1,6 +1,5 @@
 syntax enable
 colorscheme monokai-phoenix
-set termguicolors
 
 "Encoding format
 set encoding=utf-8
